@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exit 87 BBQ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <style>
+        html {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:gainsboro; 
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 22px 22px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+        }
+
+        .dropdown .dropdownbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            font-family: inherit;
+            margin: 0;
+            display: block;
+        }
+
+        .dropdown a {
+            float: none;
+            color: gray;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .dropdown a:hover {
+            background-color: gainsboro;
+            color: gray;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo a {
+            float: none;
+            position: absolute;
+            top: .5%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: gainsboro;
+            min-width: inherit;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a{
+            float: none;
+            color: gray;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown .dropdownbtn {
+            font-size: 16px;
+            margin: 0; 
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .facebook {
+            float: right;
+        }
+
+        table, td, th {  
+            border: 2px solid gainsboro;
+            text-align: left;
+        }
+
+        .menubtn {
+            background-color:white;
+            color: gray;
+            border: none;
+            cursor: pointer;
+            padding: 16px;
+            font-size: 16px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            margin: 30px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .menubtn:hover, .menubtn:focus {
+            background-color: gainsboro;
+        }
+
+        .menu-content {
+            display: none;
+            padding: 16px;
+            position: inherit;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin: 30px;
+        }
+
+        .menu-content th {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .menu-content th:hover {
+            background-color: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .lunch-content {
+            display: none;
+            padding: 16px;
+            position: inherit;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin: 30px;
+        }
+
+        .lunch-content th {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .lunch-content th:hover {
+            background-color: none;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="facebook" href="facebook.com">
+            <img src="facebook2.png" height: 10px; width: 10px; alt="facebook">
+        </a>
+        <div class="dropdown">
+            <a class="dropdownbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="index.html" class="index.html">Home</a>
+                <a href="about.html" class="about.html">About Us</a>
+                <a href="contact.html" class="contact.html">Contact</a>
+                <a href="location.html" class="location.html">Location</a>
+                <a href="order.html" class="order.html">Order</a>
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><span style="color: red; font-family:Times New Roman; font-size: 30px;" ><div id="curved2"><b>Exit 87 BBQ</b></div></span></a>
+        </div>
+    </div>
+
+        <button onclick="myFunction()" class="menubtn">Breakfast</button>
+        <div id="myMenu" class="menu-content">
+            <table>
+                <tr>
+                    <td>Sausage Egg & Cheese $5.00</td>
+                </tr>
+                <tr>
+                    <td>Chicken Egg & Cheese $6.00</td>
+                </tr>
+                <tr>
+                    <td>Bologna Egg & Cheese $4.00</td>
+                </tr>
+                <tr>
+                    <td>Egg & Cheese</td>
+                </tr>
+            </table>
+        </div>
+
+        <button onclick="lunchFunction()" class="menubtn">Lunch</button>
+        <div id="lunchMenu" class="lunch-content">
+            <table>
+                <tr>
+                    <td>BBQ Sandwich (Reg) $5.00</td>
+                </tr>
+                <tr>
+                    <td>BBQ Sandwich (Jumbo) $6.00</td>
+                </tr>
+                <tr>
+                    <td>BBQ Plate (BBQ, bun, 2 sides) $9.00</td>
+                </tr>
+                <tr>
+                    <td>BBQ Family Pack $17.00
+                        (1 1/2 lbs BBQ, 8 buns, sauce & 2 sides)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Super Family Pack $26.00
+                        (2 lbs, BBQ, 8 buns, Btl sauce & 4 sides)
+                    </td>
+                </tr>
+                <tr>
+                    <td>BBQ - per lb $9.00</td>
+                </tr>
+                <tr>
+                    <td>Ribs - St. Louis style - Rack $25.00
+                                                 1/2 Rack $14.00
+                                                 Plate $11.00
+                                                 (1/3 Rack & 2 sides)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rib Sandwich $8.00</td>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken Sandwich $6.00</td>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken Sandwich Plate $7.00</td>
+                </tr>
+                <tr>
+                    <td>BBQ Bologna Sandwich $3.00</td>
+                </tr>
+                <tr>
+                    <td>Hot Dog $3.00</td>
+                </tr>
+                <tr>
+                    <td>Slaw Dog $3.00</td>
+                </tr>
+                <tr>
+                    <td>Chili Dog $3.00</td>
+                </tr>
+                <tr>
+                    <td>Potato Dog $3.00</td>
+                </tr>
+                <tr>
+                    <td>Bowl of Chili $2.00</td>
+                </tr>
+                <tr>
+                    <td>Nachos $4.00</td>
+                </tr>
+                <tr>
+                    <td>BBQ Nachos $9.00</td>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken Nachos $9.00</td>
+                </tr>
+                <tr>
+                    <td>Chili/Cheese Nachos $6.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

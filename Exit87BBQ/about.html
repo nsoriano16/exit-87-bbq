@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exit 87 BBQ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <style>
+        html {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:gainsboro; 
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 22px 22px;
+            text-decoration: none;
+        }
+
+        .menu {
+            float: left;
+        }
+
+        .menu .menubtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            font-family: inherit;
+            margin: 0;
+            display: block;
+        }
+
+        .menu a {
+            float: none;
+            color: gray;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            background-color: gainsboro;
+            color: gray;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo a {
+            float: none;
+            position: absolute;
+            top: .5%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .menu-content {
+            display: none;
+            position: absolute;
+            background-color: gainsboro;
+            min-width: inherit;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-content a{
+            float: none;
+            color: gray;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .menu-content a:hover {
+            background-color: white;
+        }
+
+        .menu:hover .menu-content {
+            display: block;
+        }
+
+        .menu .menubtn {
+            font-size: 16px;
+            margin: 0; 
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .facebook {
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="facebook" href="facebook.com">
+            <img src="facebook2.png" height: 10px; width: 10px; alt="facebook">
+        </a>
+        <div class="menu">
+            <a class="menubtn">Dropdown</a>
+            <div class="menu-content">
+                <a href="index.html" class="index.html">Home</a>
+                <a href="contact.html" class="contact.html">Contact</a>
+                <a href="location.html" class="location.html">Location</a>
+                <a href="order.html" class="order.html">Order</a>
+                <a href="menu.html" class="menu.html">Menu</a>
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><span style="color: red; font-family:Times New Roman; font-size: 30px;" ><div id="curved2"><b>Exit 87 BBQ</b></div></span></a>
+        </div>
+    </div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
